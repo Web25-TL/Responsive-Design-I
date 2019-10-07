@@ -296,7 +296,7 @@ footer {
 @media (max-width: 800px) {
   /* Main Container @800PX */
   .container {
-    max-width: 80rem;
+    width: 100%;
     margin: 0 auto;
   }
   /* Header Section @800PX */
@@ -315,7 +315,7 @@ footer {
   }
   .main-content .top-content {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .main-content .top-content p {
     line-height: 1.15;
@@ -327,13 +327,13 @@ footer {
   }
   .main-content .middle-img {
     margin-top: 3.2rem;
-    margin-right: auto;
-    width: 95%;
+    align-items: center;
+    width: 96%;
   }
   .main-content .bottom-content {
     margin-top: 5rem;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
   }
   .main-content .bottom-content .text-content {
     flex-flow: column wrap;
@@ -354,20 +354,24 @@ footer {
   }
   header nav a {
     border-bottom: 1px solid black;
-    padding: 30px 0;
+    padding: 20px 0;
     width: 100%;
     text-align: center;
-    font-size: 5rem;
+    font-size: 2rem;
     font-weight: bold;
   }
   h4 {
     font-size: 1.8rem;
   }
   .cta {
-    margin: 100px 0;
+    margin: 60px 0;
   }
   .cta .cta-text h1 {
-    font-size: 8rem;
+    font-size: 6rem;
+  }
+  .cta .cta-text button {
+    font-size: 3rem;
+    margin-top: 20px;
   }
   .main-content {
     justify-content: center;
@@ -400,10 +404,10 @@ footer {
     padding: 30px 10px 0;
   }
   .text-content h4 {
-    font-size: 5rem;
+    font-size: 3rem;
   }
   .text-content p {
-    font-size: 4rem;
+    font-size: 1.8rem;
   }
 }
 
