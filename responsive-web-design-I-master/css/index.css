@@ -84,13 +84,12 @@ time,
 mark,
 audio,
 video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
 }
-
 
 /* HTML5 display-role reset for older browsers */
 
@@ -105,48 +104,47 @@ hgroup,
 menu,
 nav,
 section {
-    display: block;
+  display: block;
 }
 
 body {
-    line-height: 1;
+  line-height: 1;
 }
 
 ol,
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 blockquote,
 q {
-    quotes: none;
+  quotes: none;
 }
 
 blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-    content: '';
-    content: none;
+  content: '';
+  content: none;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
-
 
 /* Set every element's box-sizing to border-box */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 html,
 body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
-    font-size: 62.5%;
+  height: 100%;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 62.5%;
 }
 
 h1,
@@ -154,189 +152,259 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 1.5rem;
+  font-family: 'Bangers', cursive;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .container {
-    width: 88rem;
-    /* TB LR */
-    margin: 0 auto;
+  width: 88rem;
+  /* TB LR */
+  margin: 0 auto;
 }
 
+p {
+  font-size: 1.4rem;
+}
 
 /* header */
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 header nav {
-    display: inline-block;
-    width: 69rem;
-    vertical-align: top;
-    margin-top: 3.5rem;
+  display: flex;
+  width: 60%;
+  margin-top: 3.5rem;
+  justify-content: space-between;
 }
 
 header nav a {
-    margin-right: 6.5rem;
-    font-size: 1.4rem;
-    color: gray;
-    text-decoration: none;
+  font-size: 1.4rem;
+  color: gray;
+  text-decoration: none;
 }
 
 header nav a:hover {
-    text-decoration: underline;
-}
-
-header nav a:first-child {
-    margin-left: 0;
-}
-
-header nav a:last-child {
-    margin-right: 0;
+  text-decoration: underline;
 }
 
 header .logo {
-    margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
-
 
 /* cta */
 
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 30px 0;
+}
+
 .cta .cta-text {
-    display: inline-block;
-    vertical-align: top;
-    font-size: 7.7rem;
-    margin-top: 12rem;
-    text-align: center;
-    padding: 0px 7.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cta .cta-text h1 {
+  font-size: 5.7rem;
+  text-align: center;
 }
 
 .cta .cta-text button {
-    background: white;
-    vertical-align: top;
-    margin-top: 6px;
-    padding: 0.8rem 4.4rem;
-    font-size: 1.7rem;
-    border: 1px solid black;
-    cursor: pointer;
+  background: white;
+  margin-top: 6px;
+  padding: 0.8rem 4.4rem;
+  font-size: 1.7rem;
+  border: 1px solid black;
+  cursor: pointer;
 }
 
 .cta .cta-text button:hover {
-    background: black;
-    color: white;
-}
-
-.cta img {
-    display: inline-block;
-    margin-top: 6.9rem;
+  background: black;
+  color: white;
 }
 
 .main-content {
-    border-top: 1px solid black;
-    margin-top: 7.6rem;
-    padding-top: 3.9rem;
+  border-top: 1px solid black;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .main-content .top-content {
-    padding: 0 1rem;
+  padding: 0 1rem;
+  width: 100%;
+  display: flex;
+  margin-top: 3.7rem;
 }
 
 .main-content .top-content .text-content {
-    width: 41rem;
-    display: inline-block;
-    margin-right: 3.4rem;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content .top-content .text-content:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .main-content .middle-img {
-    margin-top: 4.5rem;
+  margin-top: 4.5rem;
 }
 
 .main-content .bottom-content {
-    margin-top: 3.7rem;
-    padding: 0 1rem;
+  margin-top: 3.7rem;
+  padding: 0 1rem;
+  display: flex;
 }
 
 .main-content .bottom-content .text-content {
-    width: 27.5rem;
-    display: inline-block;
-    margin-right: 1.2rem;
+  width: 32.75%;
+  display: flex;
+  flex-direction: column;
 }
 
 .main-content .bottom-content .text-content:last-child {
-    margin-right: 0;
+  margin-right: 0;
 }
 
 .contact {
-    margin-top: 5.7rem;
-    border-top: 1px solid black;
-    padding: 3.9rem 1rem 0;
+  margin-top: 5.7rem;
+  border-top: 1px solid black;
+  padding: 3.9rem 1rem 0;
 }
 
 .contact p {
-    margin: 2rem 0;
+  margin: 2rem 0;
 }
 
 footer {
-    margin: 3.2rem 0;
-    text-align: center;
-    font-size: 1.4rem;
+  margin: 3.2rem 0;
+  text-align: center;
+  font-size: 1.4rem;
 }
 
+/* Media Query @800PX Tablet View */
+
+@media (max-width: 800px) {
+  /* Main Container @800PX */
+  .container {
+    max-width: 80rem;
+    margin: 0 auto;
+  }
+  /* Header Section @800PX */
+  header {
+    flex-direction: column-reverse;
+    width: 100%;
+    align-items: center;
+  }
+  /* Title Section @800PX */
+  .cta img {
+    display: none;
+  }
+  /* Main Section @800PX */
+  .main-content {
+    margin-top: 7.5rem;
+  }
+  .main-content .top-content {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .main-content .top-content p {
+    line-height: 1.15;
+    margin-right: 2.5rem;
+  }
+  .main-content .top-content .text-content {
+    flex-flow: column wrap;
+    width: 48%;
+  }
+  .main-content .middle-img {
+    margin-top: 3.2rem;
+    margin-right: auto;
+    width: 95%;
+  }
+  .main-content .bottom-content {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .main-content .bottom-content .text-content {
+    flex-flow: column wrap;
+    width: 32%;
+  }
+  .main-content .bottom-content p {
+    margin-bottom: -1px;
+  }
+}
 
 /*mobile*/
-@media (max-width:500px) {
-    header nav {
-        width: 100%;
-        margin: 35px;
-        flex-direction: column;
-        align-items: center;
-    }
-    header nav a {
-        margin: 0 auto;
-        border-bottom: 1px solid black;
-        width: 100%;
-        text-align: center;
-        line-height: 2.5;
-        font-size: 20px;
-    }
-    h4 {
-        font-size: 18px
-    }
-    .cta .cta-text {
-        font-size: 44px;
-        padding: 0px;
-    }
-    .cta .cta-text button {
-        font-size: 14px;
-        width: 111px;
-        padding: 5px 10px;
-    }
-    .main-content {
-        justify-content: center;
-        border-top: 1px solid black;
-        margin-top: 10%;
-        padding-top: 5%;
-    }
-    .main-content .top-content,
-    .main-content .bottom-content {
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
-        width: 100%;
-        margin: 0px;
-    }
-    .main-content .top-content .text-content,
-    .main-content .bottom-content .text-content {
-        width: 100%;
-        margin: 5% auto;
-    }
-    .contact {
-        margin-top: 0px;
-        border-top: 1px solid black;
-        padding: 30px 10px 0;
-    }
+
+@media (max-width: 500px) {
+  header nav {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  header nav a {
+    border-bottom: 1px solid black;
+    padding: 30px 0;
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 1.8rem;
+  }
+  .cta {
+    margin: 100px 0;
+  }
+  .cta .cta-text h1 {
+    font-size: 8rem;
+  }
+  .main-content {
+    justify-content: center;
+    border-top: 1px solid black;
+    margin-top: 10%;
+    padding-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+  .main-content .top-content,
+  .main-content .bottom-content {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100%;
+    margin: 0px;
+  }
+  .main-content .top-content .text-content,
+  .main-content .bottom-content .text-content {
+    width: 100%;
+    margin: 5% auto;
+  }
+  .main-content .middle-img {
+    width: 90%;
+    justify-content: center;
+  }
+  .contact {
+    margin-top: 0px;
+    border-top: 1px solid black;
+    padding: 30px 10px 0;
+  }
+  .text-content h4 {
+    font-size: 5rem;
+  }
+  .text-content p {
+    font-size: 4rem;
+  }
 }
+
 /* end @media(>500px)[mobile] */
